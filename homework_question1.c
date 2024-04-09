@@ -5,8 +5,8 @@
 #include <stdlib.h>
 #include <time.h>
 
-int vowel(char c) {
-    c = tolower(c);
+int vowel(char c){
+    c = lower(c);
     return (c == 'a'||c == 'e'||c == 'i'||c == 'o'||c == 'u');
 }
 
@@ -26,8 +26,8 @@ char* ToPigLatin(char* word){
         strncat(result, word, i);
         strcat(result, "ay");
     }
-    if (isupper(word[0])){
-        result[0] = toupper(result[0]);
+    if (upper(word[0])){
+        result[0] = Upper(result[0]);
     }
     return result;
 }
