@@ -33,17 +33,17 @@ char* ToPigLatin(char* word){
 }
 
 int main(){
-    char words[5][39];
+    char word[5][39];
     char piglatin[5][39];
 
     printf("Type 5 words: ");
     for (int i = 0; i < 5; i++){
-        scanf("%s", words[i]);
+        scanf("%s", word[i]);
     }
 
     printf("Pig Latin version of the 5 words: \n");
     for (int i = 0; i < 5; i++){
-        strcpy(piglatin[i], ToPigLatin(words[i]));
+        strcpy(piglatin[i], ToPigLatin(word[i]));
         printf("%s ", piglatin[i]);
     }
     printf("\n");
